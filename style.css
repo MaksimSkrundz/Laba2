@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.field {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  padding: 6px;
+  border: 1px solid #888;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 15px;
+}
+
+.actions {
+  text-align: center;
+}
+
+button {
+  padding: 6px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid #fff;
+}
+
+button:hover {
+  background-color: #efe;
+  border: 1px solid #060;
+}
+
+.status {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid;
+}
+
+.status--warning {
+  color: #a00;
+  background: #fee;
+}
+
+.status--success {
+  color: #060;
+  background: #efe;
+}
+
+.status--info {
+  color: #640;
+  background: #ffe;
+}
+
+.status__details {
+  margin: 10px 0 0;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 15px;
+  overflow-x: auto;
+}
+
+.result-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 15px;
+}
+
+mark {
+  background: yellow;
+}
+
+mark.bad {
+  background: #d00;
+  color: white;
+}
+
+.syntax summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.syntax table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.syntax td {
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+}
+
+code {
+  background: #eee;
+  padding: 1px 4px;
+  font-family: Consolas, 'Courier New', monospace;
+}

@@ -1,0 +1,9 @@
+{
+  "name": "regex-helper",
+  "version": "1.0.0",
+  "description": "Помощник для проверки регулярных выражений, написанный без встроенных RegExp",
+  "type": "module",
+  "scripts": {
+    "test": "node src/tests.js"
+  }
+}

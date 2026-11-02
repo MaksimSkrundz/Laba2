@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторная работа №2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Помощник по регулярным выражениям</h1>
+
+  <section class="card">
+    <label class="field">
+      Выражение
+      <input type="text" id="expression-input" placeholder="например: (ab)+c" spellcheck="false" autocomplete="off" />
+    </label>
+
+    <label class="field">
+      Текст
+      <textarea id="text-input" rows="6" placeholder="Введите строку, в которой нужно искать" spellcheck="false"></textarea>
+    </label>
+
+    <div class="actions">
+      <button id="check-button">Проверить</button>
+    </div>
+
+    <div id="status" class="status" hidden></div>
+  </section>
+
+  <section class="card" id="result-section" hidden>
+    <h2>Результат</h2>
+    <div id="result-text" class="result-text"></div>
+  </section>
+
+  <details class="card syntax">
+    <summary>Поддерживаемый синтаксис</summary>
+    <table>
+      <tr><td><code>abc</code></td><td>обычные символы, идущие подряд</td></tr>
+      <tr><td><code>.</code></td><td>любой символ, кроме перевода строки</td></tr>
+      <tr><td><code>*</code> <code>+</code> <code>?</code></td><td>повтор: 0 и более, 1 и более, 0 или 1 раз</td></tr>
+      <tr><td><code>a|b</code></td><td>выбор: a или b</td></tr>
+      <tr><td><code>( )</code></td><td>группа, например <code>(ab)+</code></td></tr>
+      <tr><td><code>[a-z]</code> <code>[^0-9]</code></td><td>один символ из набора / не из набора</td></tr>
+      <tr><td><code>^</code> <code>$</code></td><td>начало и конец всего текста</td></tr>
+      <tr><td><code>\.</code> <code>\*</code></td><td>экранирование: знак как обычный символ</td></tr>
+    </table>
+    <p>Если подходит сразу несколько вариантов, выбирается самое длинное совпадение.</p>
+  </details>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
